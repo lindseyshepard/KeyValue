@@ -1,0 +1,7 @@
+C:\Users\linds\source\repos\KeyValue\obj\Debug\KeyValue.csprojAssemblyReference.cache
+C:\Users\linds\source\repos\KeyValue\obj\Debug\KeyValue.csproj.CoreCompileInputs.cache
+C:\Users\linds\source\repos\KeyValue\bin\Debug\KeyValue.exe.config
+C:\Users\linds\source\repos\KeyValue\bin\Debug\KeyValue.exe
+C:\Users\linds\source\repos\KeyValue\bin\Debug\KeyValue.pdb
+C:\Users\linds\source\repos\KeyValue\obj\Debug\KeyValue.exe
+C:\Users\linds\source\repos\KeyValue\obj\Debug\KeyValue.pdb
