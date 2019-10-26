@@ -1,0 +1,129 @@
+using System;
+using System.Collections.Generic;
+
+namespace KeyValue
+
+{
+    public class GenericClass<T>
+    {
+        const int length = 5;
+
+        List<T> genericList = new List<T>();
+
+        public void ListType()
+        {
+
+            for (int i = 0; i <= length; i++)
+            {
+
+                genericList = new List<T>();
+
+            }
+
+        }
+        public void LinkedType()
+        {
+            LinkedList<string> listvs = new LinkedList<string>();
+            Console.WriteLine("LinkedList");
+            foreach (string str in new string[5] { "First", "Second", "Third", "Fourth", "Fifth" })
+            {
+                listvs.AddFirst(str);
+            }
+            foreach (string str in listvs)
+            {
+                Console.WriteLine(str);
+                // return str;
+            }
+
+            Console.WriteLine();
+        }
+        public void QueueType()
+        {
+            Queue<int> queuevs = new Queue<int>();
+            Console.WriteLine("Queue");
+            foreach (int num in new int[5] { 1, 2, 3, 4, 5 })
+            {
+                queuevs.Enqueue(num);
+                Console.WriteLine(num);
+            }
+            Console.WriteLine("");
+        }
+        public void StackType()
+        {
+            Console.WriteLine("Stack");
+            Stack<string> stackvs = new Stack<string>();
+            foreach (var str in new string[5] { "FirstNum", "SecondNum", "ThirdNum", "FourthNum", "FifthNum" })
+            {
+                stackvs.Push(str);
+            }
+            foreach (var str in stackvs)
+            {
+                Console.WriteLine(str);
+            }
+
+            Console.WriteLine();
+        }
+        public void DictionaryType()
+        {
+            Console.WriteLine("Dictionary");
+            Dictionary<string, int> dictvs = new Dictionary<string, int>();
+            dictvs.Add("First", 1);
+            dictvs.Add("Second", 2);
+            dictvs.Add("third", 3);
+            dictvs.Add("Four", 4);
+            dictvs.Add("fifth", 5);
+            foreach (KeyValuePair<string, int> element in dictvs)
+            {
+                string str = element.Key;
+                int num = element.Value;
+                Console.WriteLine($"{str}, {num}");
+            }
+            Console.WriteLine();
+        }
+        public void SortType()
+        {
+            Console.WriteLine("SortedList");
+            SortedList<int, string> sortvs = new SortedList<int, string>();
+            sortvs.Add(1, "First");
+            sortvs.Add(2, "Second");
+            sortvs.Add(3, "Third");
+            sortvs.Add(4, "Fourth");
+            sortvs.Add(5, "five");
+            foreach (KeyValuePair<int, string> sT in sortvs)
+            {
+                int num = sT.Key;
+                string str = sT.Value;
+                Console.WriteLine($"{num}, {str}");
+            }
+            Console.WriteLine();
+        }
+        public void HashType()
+        {
+            HashSet<string> hashSet = new HashSet<string>(new string[5] { "My first HashSet"
+                , "My second hashset"
+                , "my third hashset"
+                , "My fourth hash set"
+                , "my 5th hashset"
+            });
+            Console.WriteLine("HashSet");
+            foreach (var hs in hashSet)
+            {
+                Console.WriteLine(hs);
+            }
+        }
+        public void ToScreen()
+        {
+            ListType();
+            LinkedType();
+            QueueType();
+            StackType();
+            DictionaryType();
+            SortType();
+            HashType();
+
+
+        }
+    }
+}
+
+
