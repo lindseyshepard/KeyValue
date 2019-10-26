@@ -1,0 +1,41 @@
+namespace KeyValue
+{
+    public struct KeyValue<U, T>
+    {
+        // Create a struct named `KeyValue` which contains one `string` 
+        //"key" and one `object` "value" as `public readonly` instance fields
+        // public readonly string Key; //these are properties so they are uppercase
+
+        public readonly U Key;
+        public readonly T Value;                    //  public object Value { get; }
+                                                    // Implement a constructor for `KeyValue` which sets the instance fields
+        public KeyValue(U key, T value) //overloading contrsuture
+        {
+            this.Key = key;
+            this.Value = value;
+        }
+    }
+
+
+
+
+
+    //Modify Key Value to use Generic type parameter rather then "value" insatnce field in 'keyvalue' as an 'object'
+    //  public object Value { get; }
+    // Queue<KeyValue> eyValueQueue = new Queue<KeyValue>();
+
+
+
+
+    //struct NewKeyValue
+    //{
+    //    public string newkey { private get ; set; }
+    //    public object newvalue { private get; set; }
+
+    //    private NewKeyValue(string newkey, object newvalue)
+    //    {
+    //        this.newkey = newkey;
+    //        this.newvalue = newvalue;
+    //    }
+    //}
+}
